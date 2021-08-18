@@ -1,0 +1,59 @@
+\documentclass[sigplan]{acmart}
+
+\usepackage{tikz}
+\usepackage[pages=some]{background}
+\usepackage{url}
+
+\setcopyright{none}
+
+\begin{document}
+
+\title{How to Add the ACM Artifact Badges to Your Papers}
+
+\author{Jungwon Kim}
+\orcid{0000-0001-6594-6225}
+\affiliation{\country{Oak Ridge National Laboratory, USA}}
+\email{https://jungwon.kim}
+
+\begin{abstract}
+This article shows you how to include the ACM artifact badges to your papers.
+\end{abstract}
+
+\begin{CCSXML}
+<ccs2012>
+<concept>
+<concept_id>10011007.10011006.10011008</concept_id>
+<concept_desc>Software and its engineering~General programming languages</concept_desc>
+<concept_significance>500</concept_significance>
+</concept>
+</ccs2012>
+\end{CCSXML}
+
+\ccsdesc[500]{Software and its engineering~General programming languages}
+
+\keywords{Latex}
+
+\maketitle
+
+\backgroundsetup{opacity=1, scale=1, angle=0, contents={
+\begin{tikzpicture}[remember picture, overlay]
+\node[anchor=north east, inner xsep=50pt, inner ysep=10pt] at (current page.north east) {
+\href{https://www.acm.org/publications/policies/artifact-review-and-badging-current}{
+\includegraphics[width=50pt]{artifacts_evaluated_functional_v1.1.pdf}
+\includegraphics[width=50pt]{artifacts_evaluated_reusable_v1.1.pdf}
+\includegraphics[width=50pt]{artifacts_available_v1.1.pdf}
+\includegraphics[width=50pt]{results_reproduced_v1.1.pdf}
+\includegraphics[width=50pt]{results_replicated_v1.1.pdf}
+}};
+\end{tikzpicture}
+}}
+\BgThispage
+
+\section{Instructions}
+You can download the ACM artifact badges vector images at \url{https://github.com/jungwonkim/artifact\_badging}~\cite{GITHUB}. The badges are placed on the top right corner of the paper, side-by-side. The “most important” badge is positioned rightmost, with the second most important to the left of it, and so on. The badges are listed from least to most important on the badging page~\cite{ACM} (so, pink/Functional is least important, light blue/Replicated is most important).
+
+\bibliographystyle{ACM-Reference-Format}
+\bibliography{sample}
+
+\end{document}
+

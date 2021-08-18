@@ -1,0 +1,49 @@
+\documentclass[conference]{IEEEtran}
+\IEEEoverridecommandlockouts
+
+\usepackage[hidelinks]{hyperref}
+\usepackage{tikz}
+\usepackage[pages=some]{background}
+\usepackage{url}
+
+\begin{document}
+
+\title{How to Add the NISO Artifact Badges to Your IEEE Papers}
+
+\author{\IEEEauthorblockN{Jungwon Kim}
+\IEEEauthorblockA{
+\textit{Oak Ridge National Laboratory}\\
+Oak Ridge, TN, USA\\
+https://jungwon.kim}
+}
+
+\maketitle
+
+\backgroundsetup{opacity=1, scale=1, angle=0, contents={
+\begin{tikzpicture}[remember picture, overlay]
+\node[anchor=north east, inner xsep=50pt, inner ysep=5pt] at (current page.north east) {
+\href{https://doi.org/10.3789/niso-rp-31-2021}{
+\includegraphics[width=40pt]{Research_Objects.png}
+\includegraphics[width=40pt]{Open_Research.png}
+\includegraphics[width=40pt]{Results_Reproduced.png}
+\includegraphics[width=40pt]{Findings_Replicated.png}
+}};
+\end{tikzpicture}
+}}
+\BgThispage
+
+\begin{abstract}
+This article shows you how to include the NISO artifact badges to your IEEE papers.
+\end{abstract}
+
+\begin{IEEEkeywords}
+LaTex
+\end{IEEEkeywords}
+
+\section{Instructions}
+You can download the NISO artifact badges images at \url{https://github.com/jungwonkim/artifact\_badging}~\cite{GITHUB}. The badges are placed on the top right corner of the paper, side-by-side. The “most important” badge is positioned rightmost, with the second most important to the left of it, and so on. The badges are listed from least to most important on the badging page~\cite{NISO} (so, ROR is least important, RER is most important).
+
+\bibliographystyle{IEEEtran}
+\bibliography{sample}
+
+\end{document}
