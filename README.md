@@ -1,4 +1,4 @@
-# acm_badging
+# artifact_badging
 This guide shows you how to include the ACM or NISO Artifact badges in your ACM or IEEE paper.
 
 ## Get the sample LaTeX code and vector images of the artifact badges.
